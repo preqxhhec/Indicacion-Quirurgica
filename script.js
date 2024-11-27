@@ -61,6 +61,14 @@ document.getElementById('BTN').addEventListener('click', function(e) {
 
 
 
+  document.getElementById('BTN').addEventListener('click', function() {
+ 
+    window.location.reload();
+    alert('Registro exitoso!');
+    document.getElementById('form').reset();
+  });
+
+
   
   function verificarContraseña() {
     var password = document.getElementById("password").value;
