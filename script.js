@@ -61,15 +61,55 @@ document.getElementById('BTN').addEventListener('click', function(e) {
 
 
 
-  document.getElementById('BTN').addEventListener('click', function() {
- 
-    window.location.reload();
-    alert('Registro exitoso!');
-    document.getElementById('form').reset();
-  });
+
+
 
 
   
+  document.getElementById('BTN').addEventListener('click', function() {
+    // Obtener todos los campos del formulario
+    const form = document.getElementById('form');
+    const inputs = form.querySelectorAll('input, textarea, select');
+    let allFilled = true;
+
+    // Verificar si todos los campos están llenos
+    inputs.forEach(function(input) {
+        if (input.value === '') {
+            allFilled = false;
+        }
+    });
+
+    // Si todos los campos están llenos, ejecutar el código
+    if (allFilled) {
+        alert('¡Registro exitoso!');
+        form.reset();
+        window.location.reload();
+    } else {
+        alert('Por favor, completa todos los campos del formulario.');
+    }
+});
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   function verificarContraseña() {
     var password = document.getElementById("password").value;
     if (password === "Minsal") {
