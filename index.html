@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
     <input type="datetime" name="fecha" id="fecha" class="fecha">
 
     <label for="especialidad">ESPECIALIDAD</label>
-<select class="selectEsp" name="especialidad" id="especialidad">
+<select class="selectEsp" name="especialidad" required id="especialidad">
     <option value=""></option>
     <option value="CIRUGIA GENERAL">CIRUGIA GENERAL</option>
     <option value="CIRUGIA INFANTIL">CIRUGIA INFANTIL</option>
@@ -50,24 +50,24 @@
 
 <div class="divNombreRut">
     <label for=" nombre" class="label">NOMBRE Y APELLIDO</label>
-    <input type="text" class="nombre" name="nombre">
+    <input type="text" class="nombre" name="nombre" required>
     <label for="rut" class="label">RUT</label>
-    <input type="text" class="rut" name="rut" placeholder="Sin (.) con (-)">
+    <input type="text" class="rut" name="rut" required placeholder="Sin (.) con (-)">
 </div>
 
 <div class="divDx">
     <label for="diagnostico">DIAGNÓSTICO</label>
-    <input type="text" class="dx" name="dx">
+    <input type="text" class="dx" name="dx" required>
 </div>
 
 <div class="divCx">
     <label for="intervención">INTERVENCIÓN QUIRÚRGICA</label>
-    <input type="text" class="cx" name="cx">
+    <input type="text" class="cx" name="cx" required>
 </div>
 
 <div class="divMateriales">
     <label for="materiales" class="materiales" name="materiales">OBSERVACIONES</label>
-    <textarea class="ttmateriales" name="ttmateriales" id="ttmateriales" rows="8" placeholder="Especifique observaciones, si necesita algun material especial o cualquier otro requerimiento"></textarea>
+    <textarea class="ttmateriales" name="ttmateriales" id="ttmateriales" rows="8" placeholder="Especifique observaciones, si necesita algun material especial o cualquier otro requerimiento" required></textarea>
 </div>
 
 <div class="select">
@@ -78,7 +78,7 @@
 
 
 <label for="priorizacion" class="priorizacion" name="priorizacion">PRIORIZACIÓN</label>
-<select name="priorizacion" id="priorizacion" class="priorizacion">
+<select name="priorizacion" id="priorizacion" class="priorizacion" required>
     <option value=""></option>
     <option value="P1">P1</option>
     <option value="P2">P2</option>
@@ -89,7 +89,7 @@
 
 
 <label for="cirujano">CIRUJANO</label>
-<select class="especialistas" name="especialista" id="especialista">
+<select class="especialistas" name="especialista" id="especialista" required>
     <option value=""></option>
     <option value="ANTONIO PAUSIN">ANTONIO PAUSIN</option>
     <option value="ALEXI ORDAZ GONZALEZ">ALEXI ORDAZ GONZALEZ</option>
