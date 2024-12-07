@@ -48,7 +48,7 @@ document.getElementById('BTN').addEventListener('click', function(e) {
     e.preventDefault();
     var formData = new FormData(document.getElementById('form'));
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbwz9eG4bmPQUKE6-XdeGdfIH6RUDj1LHIN_ZzQAE6KQp46cvocKvjgUMU3JChGUi9LRjg/exec');
+    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbxB87BoWgcMR25H1CoetbflR0kGcIxvq8Ufye3uUVa-NwSEasLXFAVOcZ987wnROdqeQQ/exec');
     xhr.reload = function() {
       document.getElementById('form').reload(); 
      
