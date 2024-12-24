@@ -7,7 +7,7 @@ function setFechaHoraActual() {
     const minutos = String(hoy.getMinutes()).padStart(2, '0');
     const segundos = String(hoy.getSeconds()).padStart(2, '0');
   
-    const fechaHoraActual = `${año}-${mes}-${dia} ${horas}:${minutos}:${segundos}`;
+    const fechaHoraActual = `${dia}-${mes}-${año} ${horas}:${minutos}:${segundos}`;
     document.getElementById('fecha').value = fechaHoraActual;
   }
   
