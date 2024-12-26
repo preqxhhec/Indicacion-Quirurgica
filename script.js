@@ -1,4 +1,4 @@
-function setFechaHoraActual() {
+ function setFechaHoraActual() {
     const hoy = new Date();
     const dia = String(hoy.getDate()).padStart(2, '0');
     const mes = String(hoy.getMonth() + 1).padStart(2, '0'); // Los meses empiezan desde 0
@@ -7,15 +7,25 @@ function setFechaHoraActual() {
     const minutos = String(hoy.getMinutes()).padStart(2, '0');
     const segundos = String(hoy.getSeconds()).padStart(2, '0');
   
-    const fechaHoraActual = `${dia}-${mes}-${año} ${horas}:${minutos}:${segundos}`;
+    const fechaHoraActual = `${dia}/${mes}/${año} ${horas}:${minutos}:${segundos}`;
     document.getElementById('fecha').value = fechaHoraActual;
   }
   
-  window.onload = setFechaHoraActual;
+  // Actualizar la fecha y hora cada segundo
+  function iniciarReloj() {
+    setInterval(setFechaHoraActual, 1000); // Llama a la función cada 1000 ms (1 segundo)
+  }
   
- 
-    
-    
+  // Establecer la fecha y hora actual al cargar la página
+  window.onload = function () {
+    setFechaHoraActual(); // Establece la fecha y hora inmediatamente
+    iniciarReloj(); // Comienza el reloj en tiempo real
+  };
+
+
+
+
+
     
     const textarea = document.getElementById('ttmateriales');
     const maxLines = 8; // Número máximo de líneas permitidas
@@ -112,9 +122,11 @@ document.getElementById('BTN').addEventListener('click', function(e) {
 
   function verificarContraseña() {
     var password = document.getElementById("password").value;
+    var imagen = document.querySelector('.img');
     if (password === "Minsal") {
         document.getElementById("form").style.display = "block";
         document.getElementById("acceso").style.display = "none";
+        imagen.style.display = 'none';
     } else {
         alert("Contraseña incorrecta");
     }
