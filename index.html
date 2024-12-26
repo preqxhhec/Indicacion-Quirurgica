@@ -24,11 +24,14 @@
 
     <form id="form" class="form" name="form" action="https://script.google.com/macros/s/AKfycbx-OUSje44omDuOboKt-0RJib6Jf2k2DoOs3HF0UXdIlIqh4kDMs6AEEyG_5pGN_0aM4g/exec" method="post">
 
+        <div class="formImg2"> 
+        <img class="img2" src="https://www.hospitalillapel.cl/institucional/wp-content/uploads/2019/07/LOGO-CHICO-03_hospital_vert.png">   
     <h1 class="H1">INGRESO UNIDAD PREQUIRÚRGICA</h1>
 
+</div>
+
 <div class="divFecha">
-    <label for="fecha" class="fecha" name="fecha" >FECHA</label>
-    <input type="datetime" name="fecha" id="fecha" class="fecha">
+    
 
     <label for="especialidad">ESPECIALIDAD</label>
 <select class="selectEsp" name="especialidad" required id="especialidad">
@@ -46,7 +49,21 @@
    
 </select>
     
+
+
+
+<label for="fecha" class="fecha" name="fecha" >FECHA</label>
+    <input type="datetime" name="fecha" id="fecha" class="fecha" readonly>
 </div>
+
+
+
+
+<fieldset class="fieldset">
+
+    <legend class="leyend">DATOS DEL PACIENTE</legend>
+
+
 
 <div class="divNombreRut">
     <label for=" nombre" class="label">NOMBRE Y APELLIDO</label>
@@ -64,19 +81,19 @@
     <label for="intervención">INTERVENCIÓN QUIRÚRGICA</label>
     <input type="text" class="cx" name="cx" required>
 </div>
+</fieldset>
+
+<fieldset class="fieldset">
+    <legend class="leyend"> OBSERVACIONES</legend>
 
 <div class="divMateriales">
-    <label for="materiales" class="materiales" name="materiales">OBSERVACIONES</label>
+
     <textarea class="ttmateriales" name="ttmateriales" id="ttmateriales" rows="8" placeholder="Especifique observaciones, si necesita algun material especial o cualquier otro requerimiento" required></textarea>
 </div>
 
 <div class="select">
 
-
-
-
-
-
+    
 <label for="priorizacion" class="priorizacion" name="priorizacion">PRIORIZACIÓN</label>
 <select name="priorizacion" id="priorizacion" class="priorizacion" required>
     <option value=""></option>
@@ -121,13 +138,26 @@
     <Option value="ULISES PINTO MARTINEZ">ULISES PINTO MARTINEZ </Option>
 </select>
 
+<label for="condicion">POST OP.</label>
+<select name="PO" id="PO" class="PO" required>
+    <option value=""></option>
+    <option value="BOX">BOX</option>
+    <option value="CMA">CMA</option>
+    <option value="HOSP">HOSP</option>
 
+</select>
 
 
 
 </div>
 
+</fieldset>
+
+
+
+
 <button type="submit" class="BTN" name="BTN" id="BTN">REGISTRAR </button>
+
 
 
 
