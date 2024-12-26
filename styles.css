@@ -6,14 +6,24 @@ align-items: center;
 height: 100vh;
 background-color: #ffff;
 margin: 0;
+background: linear-gradient(to right, #007bff, #00c6ff, #28a745,#ffc107);
 }
 
-h1{
+
+
+.img2{
+    width: 100px;
+    display: inline-block;
+
+}
+
+H1{
     font-family: sans-serif;
     font-size: 20px;
     font-style: italic;
     width: auto;
     text-align: center;
+    margin-left: 70px;
 }
 
 h2{
@@ -27,11 +37,13 @@ h2{
 .form{
 
     width: 700px;
+    padding-top: 0;
     padding: 10px;
     border: 1px solid #333;
-    background-color: #f2f4f5;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
+ 
 
 }
 
@@ -92,6 +104,7 @@ h2{
 .img{
 
     width: 300px;
+    margin-right: 50px;
    
 
 }
@@ -106,6 +119,7 @@ padding-bottom: 15px;
 .BTN, .botonpwd{
     width: auto;
     margin: auto;
+    margin-top: 10px;
     display: block;
     background-color: #4CAF50;
     color: white;
@@ -142,3 +156,23 @@ padding-bottom: 15px;
             }
             
         
+.H1, .img2{
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+.fieldset {
+  
+    border: solid black 1.5px;
+    margin-top: 20px;
+}
+
+.legend{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic black;
+}
+
+.fecha{
+    text-align: center;
+}
