@@ -239,10 +239,28 @@ padding-bottom: 15px;
   .form {
     width: 80%;
     padding: 10px;
+    overflow-y: auto;
+    max-height: 90vh;
   }
   
   .img {
     width: 80%;
     margin-right: 0;
-       }
+  }
+  
+  .nombre {
+    width: 80%;
+  }
+  
+  .dx {
+    width: 80%;
+  }
+  
+  .cx {
+    width: 80%;
+  }
+  
+  .ttmateriales {
+    width: 80%;
+  }
 }
