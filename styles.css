@@ -296,5 +296,7 @@ CSS
 }
 
 @media only screen and (min-width: 769px) {
-  /* No se aplican cambios, se mantienen los estilos originales */
+ .form {
+    max-width: 700px;
+  }
 }
