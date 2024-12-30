@@ -293,3 +293,30 @@ padding-bottom: 15px;
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .form {
+    width: 85vw !important;
+    padding: 5vw !important;
+  }
+  
+  .img {
+    width: 35vw !important;
+    margin-right: 5vw !important;
+  }
+  
+  .nombre {
+    width: 30vw !important;
+  }
+  
+  .dx {
+    width: 55vw !important;
+  }
+  
+  .cx {
+    width: 45vw !important;
+  }
+  
+  .ttmateriales {
+    width: 75vw !important;
+  }
+}
