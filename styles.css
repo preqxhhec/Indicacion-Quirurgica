@@ -181,60 +181,59 @@ padding-bottom: 15px;
 
 @media only screen and (max-width: 768px) {
   .form {
-    width: 90vw;
-    padding: 5vw;
+    width: 90vw !important;
+    padding: 5vw !important;
   }
   
   .img {
-    width: 40vw;
-    margin-right: 5vw;
+    width: 40vw !important;
+    margin-right: 5vw !important;
   }
   
   .nombre {
-    width: 35vw;
+    width: 35vw !important;
   }
   
   .dx {
-    width: 60vw;
+    width: 60vw !important;
   }
   
   .cx {
-    width: 50vw;
+    width: 50vw !important;
   }
   
   .ttmateriales {
-    width: 80vw;
+    width: 80vw !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .form {
-    width: 90vw;
-    padding: 5vw;
+    width: 90vw !important;
+    padding: 5vw !important;
   }
   
   .img {
-    width: 40vw;
-    margin-right: 5vw;
+    width: 40vw !important;
+    margin-right: 5vw !important;
   }
   
   .nombre {
-    width: 35vw;
+    width: 35vw !important;
   }
   
   .dx {
-    width: 60vw;
+    width: 60vw !important;
   }
   
   .cx {
-    width: 50vw;
+    width: 50vw !important;
   }
   
   .ttmateriales {
-    width: 80vw;
+    width: 80vw !important;
   }
 }
-
 @media only screen and (orientation: landscape) {
   .form {
     width: 80%;
