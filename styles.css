@@ -268,7 +268,8 @@ padding-bottom: 15px;
 CSS
 @media only screen and (min-width: 769px) {
   .form {
-    width: 700px;
+    width: 700px !important;
+      max-width: 700px !important;
     padding: 10px;
     margin-top: 20px;
   }
@@ -295,9 +296,3 @@ CSS
   }
 }
 
-@media only screen and (min-width: 769px) {
-  .form {
-    max-width: 700px !important;
-    width: 700px !important;
-  }
-}
