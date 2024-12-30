@@ -264,3 +264,33 @@ padding-bottom: 15px;
     width: 80%;
   }
 }
+
+CSS
+@media only screen and (min-width: 769px) {
+  .form {
+    width: 700px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .img {
+    width: 300px;
+    margin-right: 50px;
+  }
+  
+  .nombre {
+    width: 42%;
+  }
+  
+  .dx {
+    width: 80%;
+  }
+  
+  .cx {
+    width: 65%;
+  }
+  
+  .ttmateriales {
+    width: 96%;
+  }
+}
