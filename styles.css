@@ -193,7 +193,27 @@ padding-bottom: 15px;
     margin-right: 0 !important;
   }
   
-  .nombre, .rut, .dx, .cx, .ttmateriales {
+  .nombre {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  
+  .rut {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  
+  .dx {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  
+  .cx {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+  
+  .ttmateriales {
     width: 100% !important;
     margin-top: 10px !important;
   }
@@ -210,14 +230,24 @@ padding-bottom: 15px;
     margin-right: 5vw !important;
   }
   
-  .nombre, .rut {
+  .nombre {
     width: 40vw !important;
-    margin-top: 10px !important;
   }
   
-  .dx, .cx, .ttmateriales {
+  .rut {
+    width: 40vw !important;
+  }
+  
+  .dx {
     width: 70vw !important;
-    margin-top: 10px !important;
+  }
+  
+  .cx {
+    width: 60vw !important;
+  }
+  
+  .ttmateriales {
+    width: 85vw !important;
   }
 }
 
@@ -232,14 +262,24 @@ padding-bottom: 15px;
     margin-right: 5vw !important;
   }
   
-  .nombre, .rut {
+  .nombre {
     width: 35vw !important;
-    margin-top: 10px !important;
   }
   
-  .dx, .cx, .ttmateriales {
+  .rut {
+    width: 35vw !important;
+  }
+  
+  .dx {
     width: 60vw !important;
-    margin-top: 10px !important;
+  }
+  
+  .cx {
+    width: 50vw !important;
+  }
+  
+  .ttmateriales {
+    width: 80vw !important;
   }
 }
 
@@ -254,13 +294,23 @@ padding-bottom: 15px;
     margin-right: 50px !important;
   }
   
-  .nombre, .rut {
+  .nombre {
     width: 42% !important;
-    margin-top: 10px !important;
   }
   
-  .dx, .cx, .ttmateriales {
+  .rut {
+    width: 42% !important;
+  }
+  
+  .dx {
     width: 80% !important;
-    margin-top: 10px !important;
+  }
+  
+  .cx {
+    width: 65% !important;
+  }
+  
+  .ttmateriales {
+    width: 96% !important;
   }
 }
