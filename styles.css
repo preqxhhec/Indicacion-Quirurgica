@@ -234,3 +234,15 @@ padding-bottom: 15px;
     width: 100%;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  .form {
+    width: 80%;
+    padding: 10px;
+  }
+  
+  .img {
+    width: 80%;
+    margin-right: 0;
+       }
+}
