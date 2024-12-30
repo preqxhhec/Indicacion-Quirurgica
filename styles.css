@@ -193,28 +193,24 @@ padding-bottom: 15px;
     margin-right: 0 !important;
   }
   
-  .nombre {
+  .nombre, .rut, .dx, .cx, .ttmateriales {
     width: 100% !important;
     margin-top: 10px !important;
   }
   
-  .rut {
-    width: 100% !important;
-    margin-top: 10px !important;
+  /* Ajustes para elementos en una sola línea */
+  .dx, .cx {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
   }
   
-  .dx {
-    width: 100% !important;
-    margin-top: 10px !important;
+  .dx label, .cx label {
+    width: 40% !important;
+    margin-right: 10px !important;
   }
   
-  .cx {
-    width: 100% !important;
-    margin-top: 10px !important;
-  }
-  
-  .ttmateriales {
-    width: 100% !important;
-    margin-top: 10px !important;
+  .dx input, .cx input {
+    width: 50% !important;
   }
 }
