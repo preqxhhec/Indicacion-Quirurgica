@@ -297,26 +297,33 @@ padding-bottom: 15px;
   .form {
     width: 85vw !important;
     padding: 5vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   
   .img {
     width: 35vw !important;
-    margin-right: 5vw !important;
+    margin-right: 0 !important;
   }
   
   .nombre {
-    width: 30vw !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
   
   .dx {
-    width: 55vw !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
   
   .cx {
-    width: 45vw !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
   
   .ttmateriales {
-    width: 75vw !important;
+    width: 100% !important;
+    margin-top: 10px !important;
   }
 }
