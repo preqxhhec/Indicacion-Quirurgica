@@ -67,7 +67,7 @@
       e.preventDefault();
       var formData = new FormData(document.getElementById('form'));
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://script.google.com/macros/s/AKfycbx-OUSje44omDuOboKt-0RJib6Jf2k2DoOs3HF0UXdIlIqh4kDMs6AEEyG_5pGN_0aM4g/exec');
+      xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzgzgmhIge2Yzqol2mMg-rTnO5_jkqE0TsWPI3AYJ74TsGUJ92jGB4kg4VTuypeBE8r8A/exec');
       xhr.reload = function() {
         document.getElementById('form').reload(); 
        
