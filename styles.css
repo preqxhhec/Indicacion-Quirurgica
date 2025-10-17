@@ -74,7 +74,8 @@ h2{
 }
 
 .dx{
-    width: 80%;
+    width: 73%;
+    margin-left: 50px;
 }
 
 .divCx{
@@ -82,7 +83,8 @@ h2{
 }
 
 .cx{
-    width: 65%;
+    width: 72.8%;
+    margin-left: 43.1px;
 }
 
 .materiales{
@@ -167,6 +169,12 @@ padding-bottom: 15px;
     margin-top: 20px;
 }
 
+.Gine {
+  
+    border: solid black 1.5px;
+    margin-top: 20px;
+}
+
 .legend{
     font-size: 14px;
     font-weight: bold;
@@ -178,5 +186,37 @@ padding-bottom: 15px;
 }
 
 
+.contacto{
+    width: 73%;
+    margin-left: 26px;
+}
 
 
+
+
+
+
+/* Estilo para el contenedor interno */
+.divGinecologia {
+    background-color: #333333; /* Fondo oscuro consistente con el fieldset */
+    padding: 10px;
+}
+
+/* Estilo para la leyenda */
+.Gine .leyend {
+    color: #0c0c0c; /* Texto blanco para contraste */
+    font-weight: bold;
+}
+
+/* Estilo para las etiquetas */
+.Gine label {
+    color: #e0e0e0; /* Texto gris claro para legibilidad */
+    margin-right: 10px;
+}
+
+/* Estilo para los checkboxes */
+.Gine input[type="checkbox"] {
+    accent-color: #4CAF50; /* Color verde para los checkboxes marcados */
+    transform: scale(1.2); /* Tamaño ligeramente mayor para visibilidad */
+    margin-right: 5px;
+}
