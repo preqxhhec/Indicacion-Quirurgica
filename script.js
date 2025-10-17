@@ -1,6 +1,9 @@
 
  
     
+  
+ 
+    
   function setFechaHoraActual() {
     const hoy = new Date();
     const dia = String(hoy.getDate()).padStart(2, '0');
@@ -146,8 +149,102 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Función para mostrar el modal de carga
+function mostrarModalCarga() {
+    const modal = document.getElementById('loadingModal');
+    if (modal) {
+        modal.classList.add('show');
+    } else {
+        console.error('El modal de carga no se encontró en el DOM.');
+    }
+}
 
+// Función para ocultar el modal de carga
+function ocultarModalCarga() {
+    const modal = document.getElementById('loadingModal');
+    if (modal) {
+        modal.classList.remove('show');
+    }
+}
 
+// Función para validar el formulario
+function validarFormulario(formulario) {
+    const especialidad = formulario.querySelector('#especialidad').value;
+    const fecha = formulario.querySelector('#fecha').value;
+    let esValido = true;
+
+    // Validar campos obligatorios
+    if (!especialidad || !fecha) {
+        alert('Por favor, completa todos los campos obligatorios (Especialidad y Fecha).');
+        esValido = false;
+        return esValido;
+    }
+
+    // Validar que TODOS los checkboxes de ginecología estén marcados si se selecciona GINECOLOGÍA
+    if (especialidad === 'GINECOLOGIA') {
+        const checkboxes = formulario.querySelectorAll('.Gine input[type="checkbox"]');
+        const todosMarcados = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        if (!todosMarcados) {
+            alert('Por favor, marca TODOS los checkboxes en el apartado de Ginecología.');
+            esValido = false;
+        }
+    }
+
+    return esValido;
+}
+
+// Función para reiniciar el formulario y ocultar el fieldset de ginecología
+function reiniciarFormulario(formulario, fieldsetGinecologia) {
+    formulario.reset(); // Reinicia todos los campos del formulario
+    fieldsetGinecologia.classList.remove('show'); // Oculta el fieldset de ginecología
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const especialidadSelect = document.getElementById('especialidad');
+    const fieldsetGinecologia = document.querySelector('.Gine');
+    const formulario = document.getElementById('form');
+
+    // Verificar que los elementos existen
+    if (!formulario) {
+        console.error('El formulario con id="form" no se encontró.');
+        return;
+    }
+    if (!especialidadSelect) {
+        console.error('El elemento con id="especialidad" no se encontró.');
+        return;
+    }
+    if (!fieldsetGinecologia) {
+        console.error('El fieldset con clase="Gine" no se encontró.');
+        return;
+    }
+
+    // Mostrar/Ocultar fieldset de ginecología según selección
+    especialidadSelect.addEventListener('change', function() {
+        if (this.value === 'GINECOLOGIA') {
+            fieldsetGinecologia.classList.add('show');
+        } else {
+            fieldsetGinecologia.classList.remove('show');
+            // Desmarcar todos los checkboxes de ginecología al ocultar
+            const checkboxes = fieldsetGinecologia.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+        }
+    });
+
+    // Manejar envío del formulario
+    formulario.addEventListener('submit', function(evento) {
+        evento.preventDefault(); // Prevenir el envío por defecto
+
+        if (validarFormulario(formulario)) {
+            mostrarModalCarga();
+            // Simulación de envío de datos (reemplazar con lógica real)
+            setTimeout(() => {
+                ocultarModalCarga();
+                alert('Datos enviados correctamente.');
+                reiniciarFormulario(formulario, fieldsetGinecologia); // Reiniciar formulario y ocultar fieldset
+            }, 2000); // Simular 2 segundos de envío
+        }
+    });
+});
 
 
 
@@ -164,3 +261,5 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Contraseña incorrecta");
     }
 }
+
+
