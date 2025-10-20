@@ -1,9 +1,6 @@
 
  
     
-  
- 
-    
   function setFechaHoraActual() {
     const hoy = new Date();
     const dia = String(hoy.getDate()).padStart(2, '0');
@@ -85,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (allFilled && ginecologiaValida) {
                     const xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbya2rYhZcA5lwj0xQNW3_kFCMJAJ6yd4RfVMIDB9mm0esHxWrG58LpJpadJ0i6oYZM7VA/exec');
+                    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzjG8NaLbOcQ-uO5di2bmU_itfWuxPRrWeUZrBu3b17pl3KrbVx3_RshDEjgpiS6uJNwg/exec');
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
                             try {
