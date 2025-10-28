@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (allFilled && ginecologiaValida) {
                     const xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbzjG8NaLbOcQ-uO5di2bmU_itfWuxPRrWeUZrBu3b17pl3KrbVx3_RshDEjgpiS6uJNwg/exec');
+                    xhr.open('POST', 'https://script.google.com/macros/s/AKfycbyCJHHZc8L90rki0yCCNBtkLvuZGjefYfQTvwjmeRxxtaiGaR7F425k96sWSFtLNesoAw/exec');
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
                             try {
@@ -258,5 +258,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Contraseña incorrecta");
     }
 }
+
 
 
